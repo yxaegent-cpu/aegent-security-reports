@@ -1,0 +1,1 @@
+{"assessment_date":"2026-07-29","command":"npm test","passing":42,"failing":0,"groups":{"AegentMarketRegistry":9,"AegentRedemptionV2":15,"AegentSaleProceedsVault":1,"AegentSwapV2":11,"V2 integration":1,"BSC mainnet deployment-script safety":5},"scope_note":"Point-in-time local execution against the frozen assessment snapshot."}
