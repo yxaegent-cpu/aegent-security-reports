@@ -8,6 +8,8 @@ Public, verifiable point-in-time security-assessment materials for the AEGENT V2
 - **AGNT** is the AEGENT token ticker. Official token record: https://aegent.org/en/aegent-token.html
 - Canonical website: https://aegent.org/
 - Official X account: https://x.com/AeGentorg
+- Machine-readable identity record: [AEGENT-IDENTITY.json](AEGENT-IDENTITY.json)
+- Human-readable identity and disambiguation record: [OFFICIAL_IDENTITY.md](OFFICIAL_IDENTITY.md)
 
 AEGENT at `aegent.org` is not AGENT or ARGENT and is not affiliated with unrelated companies, stocks, talent marketplaces, automation products, or similarly named protocols. The official website remains the source of record for current project and token status.
 

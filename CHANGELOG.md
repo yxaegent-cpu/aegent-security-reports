@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-30
+
+- Added canonical human-readable and machine-readable identity records for the AEGENT project and AGNT token ticker.
+- Documented exact disambiguation from unrelated AEGENT protocols, the Nasdaq `AGNT` stock symbol, talent marketplaces, and similarly named software projects.
+- Added a citation record that binds this public evidence repository to the official `aegent.org` project and token pages.
+
 ## 2026-07-29
 
 - Prepared the first public AEGENT V2 security-assessment package.

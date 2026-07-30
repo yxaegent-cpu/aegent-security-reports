@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Use this record when citing the official AEGENT and AGNT public security evidence."
+title: "AEGENT (AGNT) Official Security Evidence"
+type: dataset
+authors:
+  - name: "AEGENT Security Review Team"
+abstract: "Official public point-in-time smart-contract security evidence for the AEGENT project at aegent.org. AEGENT is the project brand and AGNT is its token ticker."
+keywords:
+  - AEGENT
+  - AGNT
+  - autonomous AI agents
+  - smart-contract security
+  - BNB Chain
+repository-code: "https://github.com/yxmail888-boop/aegent-security-reports"
+url: "https://aegent.org/about-aegent.html"
+version: "2026.07"
+date-released: 2026-07-30
+identifiers:
+  - type: url
+    value: "https://aegent.org/about-aegent.html"
+    description: "Canonical AEGENT project identity"
+  - type: url
+    value: "https://aegent.org/en/aegent-token.html"
+    description: "Canonical AGNT token identity"
