@@ -1,0 +1,234 @@
+{
+    "schema":  "aegent-audit-evidence-manifest-v2",
+    "run_id":  "20260730T020710Z",
+    "status":  "frozen",
+    "captured_at_utc":  "2026-07-30T02:07:25.3564300Z",
+    "captured_at_local":  "2026-07-30T10:07:25.3564300+08:00",
+    "repository_context_commit":  "cae20adbf0497c46906e36cb98bcd3d19232c98b",
+    "repository_context_only":  true,
+    "audit_scope_file_count":  11,
+    "audit_scope_root_sha256":  "5c51c8e5df9126e3b0a5ce15e98869f6130e43bb13e4caaebf30853286763f0c",
+    "audit_scope_root_algorithm":  "SHA-256 over UTF-8 records sorted by relative path and joined with LF (no trailing LF): relative-path TAB lowercase-file-sha256",
+    "metadata_correction":  {
+                                "corrected_at_utc":  "2026-07-30T03:15:00Z",
+                                "previous_scope_root_sha256":  "3241478ff9c040a141484c4f9914a73d97aedccad5d6ab9f73a2b74a3a2b9cdc",
+                                "previous_manifest_sha256":  "6696e36364f58d9d2fb0280fdeed8033f2ec29477d7b4d2c2e1db28e1321cbb3",
+                                "reason":  "Corrected a derived scope-root and algorithm-description mismatch after independent recomputation. The frozen source-snapshot files and their per-file SHA-256 values are unchanged."
+                            },
+    "evidence_input_file_count":  35,
+    "source_root":  "合约",
+    "stable_window_seconds":  15,
+    "scope_note":  "Frozen from the latest working tree after a 15-second all-input stability window. The contextual commit does not assert these uncommitted files are contained in that commit.",
+    "files":  [
+                  {
+                      "path":  ".env.bsc-mainnet.example",
+                      "bytes":  2151,
+                      "sha256":  "bbe8cef7633ab5678630ba0b435b48bea7164a49b98d6fa832cef5af95e86c53",
+                      "last_write_utc":  "2026-07-30T01:08:22.9176480Z"
+                  },
+                  {
+                      "path":  ".env.oracle-breaker-keeper.example",
+                      "bytes":  450,
+                      "sha256":  "c4b33669f42bc96f6648654cffe7c0e40794889be49252d96730661660dc47c6",
+                      "last_write_utc":  "2026-07-30T01:19:08.5314939Z"
+                  },
+                  {
+                      "path":  "contracts/AegentMarketRegistry.sol",
+                      "bytes":  12797,
+                      "sha256":  "7bb6cf38a0b59e52564f8fa83be1a24ad33456286f712eb239ad681f83dbfb32",
+                      "last_write_utc":  "2026-07-30T01:15:15.5109607Z"
+                  },
+                  {
+                      "path":  "contracts/AegentRedemptionV2.sol",
+                      "bytes":  33018,
+                      "sha256":  "1353e6b2ef4382cd544bd321141e071d3b50e7a3704e31387847ce1ceebfcf13",
+                      "last_write_utc":  "2026-07-30T00:28:50.4828690Z"
+                  },
+                  {
+                      "path":  "contracts/AegentSaleProceedsVault.sol",
+                      "bytes":  3559,
+                      "sha256":  "983af93be4bb1fcbe2809c9fb01baea34a7bae0ddf12caf05933c5450842cc34",
+                      "last_write_utc":  "2026-07-29T07:06:08.3003656Z"
+                  },
+                  {
+                      "path":  "contracts/AegentStakingV1.sol",
+                      "bytes":  18519,
+                      "sha256":  "789b1839a17e021b5e9cca679b8332e53ea6615644ef422ec30349e4c3b0abde",
+                      "last_write_utc":  "2026-07-29T16:21:45.4450320Z"
+                  },
+                  {
+                      "path":  "contracts/AegentSwapV2.sol",
+                      "bytes":  36604,
+                      "sha256":  "c93726e35beb4d5bbdbfe37353f03c8418dc9be1add5d333c9aaedb0620d2334",
+                      "last_write_utc":  "2026-07-30T01:03:38.8725547Z"
+                  },
+                  {
+                      "path":  "contracts/interfaces/IAegentMarketRegistry.sol",
+                      "bytes":  1763,
+                      "sha256":  "20f86c9d6927aec67a51bdf5fbf7fa2ce8fbbeaa76ea577ca410c42f6f382b76",
+                      "last_write_utc":  "2026-07-30T01:02:45.6801751Z"
+                  },
+                  {
+                      "path":  "contracts/interfaces/IAegentPurchaseReceiptSource.sol",
+                      "bytes":  774,
+                      "sha256":  "52abd846c87734040bfb375177186bff6d8b56f9b23ddbeeb8a7a4f4c3d5badb",
+                      "last_write_utc":  "2026-07-29T11:21:23.5403620Z"
+                  },
+                  {
+                      "path":  "contracts/interfaces/IAegentRedemptionEndpoint.sol",
+                      "bytes":  407,
+                      "sha256":  "b78ac12e384e2c71bdf33eb44a899c417c30eb4a9376fb28351d85c50bcf369d",
+                      "last_write_utc":  "2026-07-30T00:22:07.3602922Z"
+                  },
+                  {
+                      "path":  "contracts/interfaces/IAegentRegistryBound.sol",
+                      "bytes":  217,
+                      "sha256":  "bf53c7606cbc5853a74710c9fa31dfd256a31283eedaf7ede01e213b0f12bc84",
+                      "last_write_utc":  "2026-07-29T10:30:33.7817829Z"
+                  },
+                  {
+                      "path":  "contracts/interfaces/IAegentSaleProceedsVault.sol",
+                      "bytes":  328,
+                      "sha256":  "eb1005d38941efc7dfd9e8c961eb5a4df10f9a43f630330495dd82b73854c974",
+                      "last_write_utc":  "2026-07-29T07:06:08.3003656Z"
+                  },
+                  {
+                      "path":  "contracts/interfaces/IAggregatorV3.sol",
+                      "bytes":  383,
+                      "sha256":  "2dc0d69856b9cf3579d866c1da3bb9baff2fe505d9702001fcddc47e319a2b7e",
+                      "last_write_utc":  "2026-07-29T06:26:56.1369565Z"
+                  },
+                  {
+                      "path":  "contracts/mocks/MockAggregatorV3.sol",
+                      "bytes":  1307,
+                      "sha256":  "75ed425fa877ba54bd2f0c739cb641114ce17a6b7fdebd34e1b91382faad14cf",
+                      "last_write_utc":  "2026-07-30T01:16:25.3490474Z"
+                  },
+                  {
+                      "path":  "contracts/mocks/MockERC20.sol",
+                      "bytes":  583,
+                      "sha256":  "df19225632281ba63531da3201db0ccd258918f0ffcee88d69910499d123e8e0",
+                      "last_write_utc":  "2026-07-29T06:26:56.1389561Z"
+                  },
+                  {
+                      "path":  "contracts/mocks/MockFeeOnTransferERC20.sol",
+                      "bytes":  1109,
+                      "sha256":  "2c9d89107c534820c482f128c93aaf70eb36914d7a5e2210f5fd1239e38be060",
+                      "last_write_utc":  "2026-07-29T16:12:27.3269020Z"
+                  },
+                  {
+                      "path":  "contracts/mocks/MockReentrantStakingBeneficiary.sol",
+                      "bytes":  746,
+                      "sha256":  "91dd716b58a9bba0205df222dd7f49726f563b6a3d9b868e5e1ae343c0da63bc",
+                      "last_write_utc":  "2026-07-29T16:12:27.3276132Z"
+                  },
+                  {
+                      "path":  "contracts/mocks/MockSwapEndpoint.sol",
+                      "bytes":  2919,
+                      "sha256":  "56e026e7bc61a010b5c081d24801f71b1fb5a2d56bb81b23eb928316e0b14dee",
+                      "last_write_utc":  "2026-07-30T01:15:15.5159827Z"
+                  },
+                  {
+                      "path":  "hardhat.config.cjs",
+                      "bytes":  426,
+                      "sha256":  "9ceebc4eb4c699de6c1098b552bd706fffcbd756a1917ecb656cde5379572fda",
+                      "last_write_utc":  "2026-07-29T15:25:35.0149815Z"
+                  },
+                  {
+                      "path":  "hardhat.wrong-chain.config.cjs",
+                      "bytes":  370,
+                      "sha256":  "1f6aa068e35c4b0a542a99a28f1fae769d5e4332d22946280aab57dd3c09faf5",
+                      "last_write_utc":  "2026-07-29T16:11:24.9824196Z"
+                  },
+                  {
+                      "path":  "package.json",
+                      "bytes":  990,
+                      "sha256":  "094ddd62ec9d0cc2840b41097898a0d0207827f3f889b87167ca6359cd2e646c",
+                      "last_write_utc":  "2026-07-30T01:19:08.5320168Z"
+                  },
+                  {
+                      "path":  "package-lock.json",
+                      "bytes":  149991,
+                      "sha256":  "11235a73de86c8d5396d9328291f3a5542a7c52186ecf5d38bf0d40a379c297d",
+                      "last_write_utc":  "2026-07-29T07:15:43.8015537Z"
+                  },
+                  {
+                      "path":  "README.md",
+                      "bytes":  12444,
+                      "sha256":  "02a3c1e3332e42e8a25f1cd8d1c6317c7c944f3d11427fbac4cfd4eb9439bce8",
+                      "last_write_utc":  "2026-07-30T01:21:04.1691042Z"
+                  },
+                  {
+                      "path":  "scripts/deploy-bsc-mainnet.cjs",
+                      "bytes":  454,
+                      "sha256":  "eb8117e2366ebeb21ec638ae7eb860ab24c0b083ba736888b9c9a8d0881591eb",
+                      "last_write_utc":  "2026-07-29T11:13:48.6318425Z"
+                  },
+                  {
+                      "path":  "scripts/lib/bsc-mainnet-deployment.cjs",
+                      "bytes":  31616,
+                      "sha256":  "aea6321eb9baf042a703077c98cebbabb4704ef47c2f903b816dc13f4811e3ed",
+                      "last_write_utc":  "2026-07-30T02:06:14.4186852Z"
+                  },
+                  {
+                      "path":  "scripts/oracle-breaker-keeper.cjs",
+                      "bytes":  8431,
+                      "sha256":  "7d16c9d52a2c650d3bda905e3437b07a361aaa1adbc4df617e044c9c0642ee8c",
+                      "last_write_utc":  "2026-07-30T01:20:20.1597514Z"
+                  },
+                  {
+                      "path":  "test/AegentMarketRegistry.test.cjs",
+                      "bytes":  10146,
+                      "sha256":  "2b6f5723dc75c53598192639bb1ca31e673246c56b59c250b230a07c76e7a3bd",
+                      "last_write_utc":  "2026-07-29T11:35:02.7786568Z"
+                  },
+                  {
+                      "path":  "test/AegentRedemptionV2.test.cjs",
+                      "bytes":  20582,
+                      "sha256":  "899bc71152ac874179dd5bed3587c279ac2cf9f9fd92d3c3ba59e61ec4153518",
+                      "last_write_utc":  "2026-07-30T00:13:07.9706317Z"
+                  },
+                  {
+                      "path":  "test/AegentSaleProceedsVault.test.cjs",
+                      "bytes":  2329,
+                      "sha256":  "59adcf9c35821598a83faa5cb12afdf843987c04d7810305408a72b5bfdf389b",
+                      "last_write_utc":  "2026-07-29T10:47:08.9402455Z"
+                  },
+                  {
+                      "path":  "test/AegentStakingV1.test.cjs",
+                      "bytes":  20244,
+                      "sha256":  "8efc388de41cff346d1a93f79e980dfffc041d85c6ae595118d392fc830b9f06",
+                      "last_write_utc":  "2026-07-29T16:21:45.4460795Z"
+                  },
+                  {
+                      "path":  "test/AegentStakingWrongChain.test.cjs",
+                      "bytes":  1276,
+                      "sha256":  "a691c5b5d60e3980897eb77ad5a0312e205c5d48e15488c5b7568ebf21015445",
+                      "last_write_utc":  "2026-07-29T16:11:24.9819112Z"
+                  },
+                  {
+                      "path":  "test/AegentSwapV2.test.cjs",
+                      "bytes":  26465,
+                      "sha256":  "a32589038aaf77b8e25be9e4931c570141cc04a338e14eabe4f69e0f99446dd3",
+                      "last_write_utc":  "2026-07-30T01:21:47.5002930Z"
+                  },
+                  {
+                      "path":  "test/AegentV2Integration.test.cjs",
+                      "bytes":  9302,
+                      "sha256":  "aa71f92e695e9337f2e557ca422791eb72dd1a3bd59645be0fb7e8f15bc2b605",
+                      "last_write_utc":  "2026-07-30T01:01:41.7041038Z"
+                  },
+                  {
+                      "path":  "test/BscMainnetDeploymentScript.test.cjs",
+                      "bytes":  10611,
+                      "sha256":  "080606ac1266b5b46f61dcda3d5e6cb31e40ea06727bc116c9e0ac1ad626fd0b",
+                      "last_write_utc":  "2026-07-30T02:05:22.2486246Z"
+                  },
+                  {
+                      "path":  "test/OracleBreakerKeeper.test.cjs",
+                      "bytes":  1656,
+                      "sha256":  "4f58d9e81218c6a37bf01f812d264d2c962c48ac18bea3c37f1f90ca9f196ba8",
+                      "last_write_utc":  "2026-07-30T01:19:08.5309694Z"
+                  }
+              ]
+}

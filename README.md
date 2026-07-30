@@ -13,7 +13,29 @@ Public, verifiable point-in-time security-assessment materials for the AEGENT V2
 
 AEGENT at `aegent.org` is not AGENT or ARGENT and is not affiliated with unrelated companies, stocks, talent marketplaces, automation products, or similarly named protocols. The official website remains the source of record for current project and token status.
 
-## Current assessment
+## Latest formal assessment
+
+- Issue date: 2026-07-30
+- Document ID: `AEG-SAR-2026-0730-01`
+- Author and issuer: AEGENT Security Review Team
+- Evidence run: `20260730T020710Z`
+- Scope root: `5c51c8e5df9126e3b0a5ce15e98869f6130e43bb13e4caaebf30853286763f0c`
+- Disposition: **remediation required before mainnet**
+- Tests: 74 passing / 1 intentional pending on chain 56; wrong-chain guard 1/1 passing on chain 97
+- Findings: MED-01 and MED-02 resolved, MED-03 partially resolved, MED-04 open, LOW-01 open, INFO-01 through INFO-04 open
+
+| PDF | Editable DOCX | Source Markdown | Evidence summary |
+| --- | --- | --- | --- |
+| [PDF](reports/AEGENT-First-Party-Smart-Contract-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-First-Party-Smart-Contract-Security-Assessment-2026-07.docx) | [Markdown](reports/AEGENT-First-Party-Smart-Contract-Security-Assessment-2026-07.md) | [Evidence](evidence/formal-20260730/README.md) |
+
+For fast review, a separate two-page executive summary is available in
+[PDF](reports/AEGENT-Smart-Contract-Security-Assessment-Executive-Summary-2026-07.pdf)
+and [DOCX](reports/AEGENT-Smart-Contract-Security-Assessment-Executive-Summary-2026-07.docx).
+The 31-page assessment remains the controlling report.
+
+The formal report is bound to a 35-file frozen evidence input package and an 11-file production Solidity scope. The public report contains no third-party logo, signature, seal, report number, or issuance claim.
+
+## Previous assessment package
 
 - Assessment date: 2026-07-29
 - Author and issuer: AEGENT Security Review Team
@@ -23,7 +45,7 @@ AEGENT at `aegent.org` is not AGENT or ARGENT and is not affiliated with unrelat
 - Test evidence: 42 passing, 0 failing
 - Source binding: 10 of 10 reviewed files match the frozen snapshot
 
-The three reports present the same evidence through complementary review structures:
+The previous three-report package presents its evidence through complementary review structures:
 
 | Review profile | PDF | Editable DOCX | Source Markdown |
 | --- | --- | --- | --- |
@@ -35,7 +57,7 @@ The [evidence manifest](EVIDENCE_MANIFEST.md) binds the reports to the reviewed 
 
 ## Important attribution
 
-These reports are authored and issued by the **AEGENT Security Review Team**. They are not authored, reviewed, endorsed, signed, certified, numbered, or issued by OpenZeppelin, CertiK, SlowMist, Binance, or any other third party. Public report conventions informed the organization only.
+All public reports in this repository are authored and issued by the **AEGENT Security Review Team**. They are not authored, reviewed, endorsed, signed, certified, numbered, or issued by OpenZeppelin, CertiK, SlowMist, Binance, or any other third party. Public report conventions informed the organization only.
 
 ## Repository layout
 
