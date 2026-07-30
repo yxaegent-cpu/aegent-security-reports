@@ -81,7 +81,7 @@ All hashes use SHA-256. Byte counts are decimal bytes.
 | `test-snapshot/AegentRedemptionV2.test.cjs` | `19c8e17cd4adedc4b4921f0e405c2a3406c90d21a3f70b31cc05cc6e5ee72a80` | 18,989 |
 | `test-snapshot/AegentSwapV2.test.cjs` | `c198255319a50cac30fef64fdf60160f77c10231938258a766109f377314ac09` | 15,076 |
 | `test-snapshot/AegentV2Integration.test.cjs` | `2208ae5ffde48d79b23d3f9864941f0a0f3e9a2664135c3bfeada94ffe4de576` | 8,548 |
-| `REPORT_QA.md` | `dde267046859490303de0a450640e79a8f83ba072b7aa990c5c08442816df7b3` | 3,772 |
+| `REPORT_QA.md` | `88ffbb593541aca8b77289d796803ab593338ea876057a8bcbc834df2248314b` | 6,475 |
 
 The manifest does not hash itself because embedding its own digest would be recursive. The Git publication commit binds this file and all listed artifacts.
 

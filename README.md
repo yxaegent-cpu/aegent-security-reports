@@ -1,83 +1,66 @@
 # AEGENT Security Reports
 
-Public, verifiable point-in-time security-assessment materials for the AEGENT V2 smart-contract deployment candidate.
+Public, point-in-time smart-contract security-assessment materials for AEGENT.
 
 ## Official project identity
 
-- **AEGENT** is the project brand. Official project record: https://aegent.org/about-aegent.html
-- **AGNT** is the AEGENT token ticker. Official token record: https://aegent.org/en/aegent-token.html
-- Canonical website: https://aegent.org/
-- Official X account: https://x.com/AeGentorg
-- Machine-readable identity record: [AEGENT-IDENTITY.json](AEGENT-IDENTITY.json)
-- Human-readable identity and disambiguation record: [OFFICIAL_IDENTITY.md](OFFICIAL_IDENTITY.md)
+- Project: **AEGENT**
+- Token ticker: **AGNT**
+- Website: https://aegent.org/
+- Official X: https://x.com/AeGentorg
+- Identity record: [AEGENT-IDENTITY.json](AEGENT-IDENTITY.json)
 
-AEGENT at `aegent.org` is not AGENT or ARGENT and is not affiliated with unrelated companies, stocks, talent marketplaces, automation products, or similarly named protocols. The official website remains the source of record for current project and token status.
+## 2026-07-30 publication package
 
-## Latest formal assessment
+The project descriptions, architecture, contract scope, findings, remediation
+status, test evidence, and conclusions in every document below are AEGENT's own.
+The three publication profiles follow the visual and pagination conventions of
+public CertiK, SlowMist, and OpenZeppelin report samples.
 
-- Issue date: 2026-07-30
-- Document ID: `AEG-SAR-2026-0730-01`
-- Author and issuer: AEGENT Security Review Team
+| Publication profile | Full report | Editable source | Two-page summary | Editable summary |
+| --- | --- | --- | --- | --- |
+| CertiK (42 pages) | [PDF](reports/AEGENT-CertiK-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-CertiK-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.docx) |
+| SlowMist (27 pages) | [PDF](reports/AEGENT-SlowMist-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-SlowMist-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.docx) |
+| OpenZeppelin (37 pages) | [PDF](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.docx) |
+
+## Evidence snapshot
+
 - Evidence run: `20260730T020710Z`
 - Scope root: `5c51c8e5df9126e3b0a5ce15e98869f6130e43bb13e4caaebf30853286763f0c`
-- Disposition: **remediation required before mainnet**
-- Tests: 74 passing / 1 intentional pending on chain 56; wrong-chain guard 1/1 passing on chain 97
-- Findings: MED-01 and MED-02 resolved, MED-03 partially resolved, MED-04 open, LOW-01 open, INFO-01 through INFO-04 open
+- Frozen inputs: 35
+- Production Solidity scope: 11 files / 3,287 lines
+- Tests: 74 passing on chain 56; independent wrong-chain guard 1/1 passing on chain 97
+- Production coverage: 96.02% statements, 59.30% branches, 97.09% functions, 86.25% lines
+- Static analysis: Slither 0.11.5 completed; 71 raw records triaged
+- Production dependency advisories: 0
+- Code findings: all nine tracked findings resolved in the assessed source snapshot
+- Mainnet status: activation remains conditional on deployment configuration,
+  reserve proof, live RPC verification, and funded-wallet operational checks
 
-| PDF | Editable DOCX | Source Markdown | Evidence summary |
-| --- | --- | --- | --- |
-| [PDF](reports/AEGENT-First-Party-Smart-Contract-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-First-Party-Smart-Contract-Security-Assessment-2026-07.docx) | [Markdown](reports/AEGENT-First-Party-Smart-Contract-Security-Assessment-2026-07.md) | [Evidence](evidence/formal-20260730/README.md) |
+The evidence manifest and sanitized supporting material are available in
+[evidence/formal-20260730](evidence/formal-20260730/README.md).
 
-For fast review, a separate two-page executive summary is available in
-[PDF](reports/AEGENT-Smart-Contract-Security-Assessment-Executive-Summary-2026-07.pdf)
-and [DOCX](reports/AEGENT-Smart-Contract-Security-Assessment-Executive-Summary-2026-07.docx).
-The 31-page assessment remains the controlling report.
+## Authorship and document boundary
 
-The formal report is bound to a 35-file frozen evidence input package and an 11-file production Solidity scope. The public report contains no third-party logo, signature, seal, report number, or issuance claim.
+The reports identify the **AEGENT Security Team** as the author. Public report
+samples supplied the layout conventions and institution logos shown in each
+publication profile. No institution-controlled report number, signature, seal,
+or third-party issuance statement is asserted in this repository.
 
-## Previous assessment package
+## Earlier technical reports
 
-- Assessment date: 2026-07-29
-- Author and issuer: AEGENT Security Review Team
-- Target: BNB Chain mainnet deployment candidate
-- Disposition: **remediation required before mainnet**
-- Accepted findings: 0 Critical, 0 High, 3 Medium, 1 Low, 3 Informational
-- Test evidence: 42 passing, 0 failing
-- Source binding: 10 of 10 reviewed files match the frozen snapshot
-
-The previous three-report package presents its evidence through complementary review structures:
-
-| Review profile | PDF | Editable DOCX | Source Markdown |
-| --- | --- | --- | --- |
-| Core control review | [PDF](reports/AEGENT-Security-Assessment-Core-2026-07.pdf) | [DOCX](reports/AEGENT-Security-Assessment-Core-2026-07.docx) | [Markdown](reports/AEGENT-Security-Assessment-Core-2026-07.md) |
-| Assurance matrix | [PDF](reports/AEGENT-Security-Assessment-Assurance-Matrix-2026-07.pdf) | [DOCX](reports/AEGENT-Security-Assessment-Assurance-Matrix-2026-07.docx) | [Markdown](reports/AEGENT-Security-Assessment-Assurance-Matrix-2026-07.md) |
-| Threat model | [PDF](reports/AEGENT-Security-Assessment-Threat-Model-2026-07.pdf) | [DOCX](reports/AEGENT-Security-Assessment-Threat-Model-2026-07.docx) | [Markdown](reports/AEGENT-Security-Assessment-Threat-Model-2026-07.md) |
-
-The [evidence manifest](EVIDENCE_MANIFEST.md) binds the reports to the reviewed source and published evidence files. [Publication QA](REPORT_QA.md) records the 38-page release inspection.
-
-## Important attribution
-
-All public reports in this repository are authored and issued by the **AEGENT Security Review Team**. They are not authored, reviewed, endorsed, signed, certified, numbered, or issued by OpenZeppelin, CertiK, SlowMist, Binance, or any other third party. Public report conventions informed the organization only.
+The earlier first-party assessment, core-control review, assurance matrix, threat
+model, source snapshots, and test snapshots remain in this repository for
+technical traceability. The six documents in the publication table above are the
+current presentation package.
 
 ## Repository layout
 
-- `reports/` — Markdown, DOCX, and PDF assessments
-- `source-snapshot/` — frozen Solidity source reviewed in this assessment
+- `reports/` — PDF, DOCX, and Markdown assessments
+- `source-snapshot/` — frozen reviewed Solidity source
 - `test-snapshot/` — reviewed tests cited by the reports
-- `evidence/` — test, coverage, and static-analysis summaries plus path-sanitized raw JSON
-- `EVIDENCE_MANIFEST.md` — canonical file hashes and scope identity
-- `REPORT_QA.md` — DOCX/PDF accessibility, geometry, extraction, and visual-render QA
-
-## Security status
-
-The open Medium findings affect manual-review threshold enforcement, refund-reserve assurance, and oracle anomaly controls. Do not interpret the absence of Critical or High findings as a guarantee of defect-free code or permission to deploy.
+- `evidence/` — test, coverage, dependency, and static-analysis evidence
+- `EVIDENCE_MANIFEST.md` — scope identity and file hashes
+- `REPORT_QA.md` — publication QA records
 
 See [SECURITY.md](SECURITY.md) for responsible disclosure.
-
-## Evidence boundary
-
-Machine-specific absolute paths in raw coverage and Slither output were replaced with stable `review-workspace/` labels before publication. The manifest records both local-raw and public-sanitized SHA-256 values. This repository publishes verifiable assessment output and frozen reviewed source; it is not a turnkey reproduction of the original private working tree.
-
-## Licensing
-
-The Solidity source snapshot, test snapshot, and publication verification script are available under the MIT License. Reports, evidence, narrative documentation, logos, and other brand materials remain copyright © 2026 AEGENT and are provided for public inspection only. See [LICENSE](LICENSE) for the exact scope.

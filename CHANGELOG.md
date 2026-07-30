@@ -2,6 +2,12 @@
 
 ## 2026-07-30
 
+- Published three current AEGENT security-assessment profiles in exact 42-page
+  CertiK, 27-page SlowMist, and 37-page OpenZeppelin publication structures.
+- Added a separate two-page executive summary for each publication profile.
+- Added editable DOCX sources for all six deliverables.
+- Completed automated geometry/content checks and visual inspection of all 112 pages.
+- Updated the public index so the current six-document package is listed first.
 - Published the 31-page formal AEGENT first-party smart-contract security assessment in PDF, editable DOCX, and Markdown formats.
 - Added a separate two-page executive summary (cover plus consolidated evidence, finding status, and mainnet decision) in PDF and DOCX formats.
 - Bound the report to evidence run `20260730T020710Z`, 35 frozen inputs, 11 production Solidity files, 74 passing tests, the corrected scope root, and current finding states.
