@@ -33,9 +33,11 @@ public CertiK, SlowMist, and OpenZeppelin report samples.
 - Production coverage: 96.02% statements, 59.30% branches, 97.09% functions, 86.25% lines
 - Static analysis: Slither 0.11.5 completed; 71 raw records triaged
 - Production dependency advisories: 0
-- Code findings: all nine tracked findings resolved in the assessed source snapshot
-- Mainnet status: activation remains conditional on deployment configuration,
-  reserve proof, live RPC verification, and funded-wallet operational checks
+- Findings: 0 Critical / 0 High; each tracked finding's local, production, and
+  independent-retest status is recorded separately in the reports
+- Mainnet status: activation remains conditional on the report closure gates,
+  deployment configuration, reserve proof, live RPC verification, and
+  funded-wallet operational checks
 
 The evidence manifest and sanitized supporting material are available in
 [evidence/formal-20260730](evidence/formal-20260730/README.md).
