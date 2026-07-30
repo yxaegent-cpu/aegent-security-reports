@@ -2,6 +2,15 @@
 
 Public, verifiable point-in-time security-assessment materials for the AEGENT V2 smart-contract deployment candidate.
 
+## Official project identity
+
+- **AEGENT** is the project brand. Official project record: https://aegent.org/about-aegent.html
+- **AGNT** is the AEGENT token ticker. Official token record: https://aegent.org/en/aegent-token.html
+- Canonical website: https://aegent.org/
+- Official X account: https://x.com/AeGentorg
+
+AEGENT at `aegent.org` is not AGENT or ARGENT and is not affiliated with unrelated companies, stocks, talent marketplaces, automation products, or similarly named protocols. The official website remains the source of record for current project and token status.
+
 ## Current assessment
 
 - Assessment date: 2026-07-29
