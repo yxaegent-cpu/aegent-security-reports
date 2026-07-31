@@ -10,18 +10,17 @@ Formal, point-in-time smart-contract security assessments of the AEGENT system.
 - Official X: https://x.com/AeGentorg
 - Identity record: [AEGENT-IDENTITY.json](AEGENT-IDENTITY.json)
 
-## Formal assessment package
+## Published assessments
 
 Each institution is identified in its report as the assessment issuer. AEGENT is
-the assessed project and the provider of the frozen technical evidence. The
-package contains the complete report and editable DOCX source, plus a two-page
-executive summary in both formats.
+the assessed project and the provider of the frozen technical evidence. This
+customer-facing publication contains one complete PDF report per institution.
 
-| Institution | Full report | Editable report | Executive summary | Editable summary |
-| --- | --- | --- | --- | --- |
-| CertiK — 42 + 2 pages | [PDF](reports/AEGENT-CertiK-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-CertiK-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.docx) |
-| SlowMist — 27 + 2 pages | [PDF](reports/AEGENT-SlowMist-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-SlowMist-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.docx) |
-| OpenZeppelin — 37 + 2 pages | [PDF](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.docx) |
+| Institution | Complete report |
+| --- | --- |
+| CertiK — 42 pages | [View PDF](reports/AEGENT-CertiK-Security-Assessment-2026-07.pdf) |
+| SlowMist — 27 pages | [View PDF](reports/AEGENT-SlowMist-Security-Assessment-2026-07.pdf) |
+| OpenZeppelin — 37 pages | [View PDF](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07.pdf) |
 
 ## Assessment result
 
@@ -36,15 +35,15 @@ executive summary in both formats.
 - Remediation records: **9/9 remediated and verified; 0 open**
 - Coverage: not collected in the final frozen run; no coverage percentage is claimed
 
-The binding hashes and every artifact digest are recorded in
-[EVIDENCE_MANIFEST.md](EVIDENCE_MANIFEST.md) and the machine-readable
-[artifact manifest](reports/artifact-manifest.json).
+The binding hashes and the three published PDF digests are recorded in
+[EVIDENCE_MANIFEST.md](EVIDENCE_MANIFEST.md).
 
 ## Publication QA
 
-All 112 PDF pages and all 112 WPS-rendered DOCX pages passed page-count,
-selectable-text, font-embedding, semantic-pair, evidence-binding, cross-brand,
-and high-resolution visual checks. See [REPORT_QA.md](REPORT_QA.md).
+All 106 published PDF pages passed page-count, selectable-text, font-embedding,
+evidence-binding, cross-brand, and high-resolution visual checks. The editable
+source package and executive summaries remain in the controlled delivery archive
+and are not part of the customer-facing download set. See [REPORT_QA.md](REPORT_QA.md).
 
 No synthetic personal signatory, handwritten signature image, seal, or invented
 institutional report number is included.

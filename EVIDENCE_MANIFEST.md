@@ -41,18 +41,9 @@ All hashes use SHA-256. Byte counts are decimal bytes.
 
 | File | SHA-256 | Bytes |
 | --- | --- | ---: |
-| `AEGENT-CertiK-Security-Assessment-2026-07.docx` | `4855c68852b068a18d847be58f09e2b04460f26f422252d942cf18d7a0defa6b` | 2,063,692 |
 | `AEGENT-CertiK-Security-Assessment-2026-07.pdf` | `950409993d48e92f2a81d48f60dc11d915c24cc63fe087b12e42607e7f8b4c00` | 2,524,519 |
-| `AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.docx` | `9384db28b84d2faaa714f6c954c4793b5c71666679cdac13f62b79448d9074de` | 1,246,820 |
-| `AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.pdf` | `7de9f853b8312df2d118111f25e9ecaa0dae2865d5a597ddfaf150c300a1b610` | 567,683 |
-| `AEGENT-SlowMist-Security-Assessment-2026-07.docx` | `ca9a8e2b96c1b526cb0cfb10b51c52dcbb4171439a4187eae9e043e5412eed6e` | 7,961,413 |
 | `AEGENT-SlowMist-Security-Assessment-2026-07.pdf` | `265d38a09d95f200d7a8c9e3c962dd6bee6b4717bfdf7d1ecc2d8a92df6b711e` | 172,876 |
-| `AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.docx` | `20d78ef089d6287630c0fe8597a85d0d208345ba6f70fc2d97d397d283e85062` | 620,157 |
-| `AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.pdf` | `b6517631173e5330f3f83f6ef43df313b6e86decb744fe6a0312a9da33700826` | 87,203 |
-| `AEGENT-OpenZeppelin-Security-Assessment-2026-07.docx` | `a4cebbdb0e35f2f3c824c2d8029fe23c342a567f835e2afaeec97eb640d86467` | 8,319,954 |
 | `AEGENT-OpenZeppelin-Security-Assessment-2026-07.pdf` | `19649469abba4ba126c2b796622285f38d6720470b044b553f2af603b8afbb8a` | 243,739 |
-| `AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.docx` | `1d4336a71f69a22603cc4843f24d779f6c3ad5cbd56c9ac572de126538d26bcc` | 1,064,304 |
-| `AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.pdf` | `15680ee0d2ed50cca683f62c6d86e204f71ffd9cb442475840716d459e682542` | 119,300 |
 
-The authoritative machine-readable copy is
-[`reports/artifact-manifest.json`](reports/artifact-manifest.json).
+Only these three complete PDFs are included in the customer-facing publication.
+Editable source files and executive summaries remain in the controlled delivery archive.

@@ -21,6 +21,3 @@ identifiers:
   - type: url
     value: "https://aegent.org/"
     description: "Canonical AEGENT project website"
-  - type: url
-    value: "https://github.com/yxmail888-boop/aegent-security-reports/blob/main/reports/artifact-manifest.json"
-    description: "Machine-readable artifact and evidence manifest"
