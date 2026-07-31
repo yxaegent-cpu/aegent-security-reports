@@ -8,7 +8,6 @@ Formal, point-in-time smart-contract security assessments of the AEGENT system.
 - Token ticker: **AGNT**
 - Website: https://aegent.org/
 - Official X: https://x.com/AeGentorg
-- Identity record: [AEGENT-IDENTITY.json](AEGENT-IDENTITY.json)
 
 ## Published assessments
 
@@ -24,28 +23,10 @@ customer-facing publication contains one complete PDF report per institution.
 
 ## Assessment result
 
-- Final frozen run: `req223-20260731T134906328Z-c14331b422a13df5`
-- Evidence steps: **30/30 passed**
-- Production Solidity scope: **11 files**
-- Compiled Solidity files: **34**
-- Chain-56 tests: **245 passing**, with **1 intentional isolated case**
-- Wrong-chain guard: **1/1 passing** on chain 97
-- Static analysis: **Solhint, 0 findings**
-- Production dependency advisories: **0**
-- Remediation records: **9/9 remediated and verified; 0 open**
-- Coverage: not collected in the final frozen run; no coverage percentage is claimed
+- **9/9 remediation records verified**
+- **0 open findings**
+- **30/30 evidence checks passed**
 
-The binding hashes and the three published PDF digests are recorded in
-[EVIDENCE_MANIFEST.md](EVIDENCE_MANIFEST.md).
-
-## Publication QA
-
-All 106 published PDF pages passed page-count, selectable-text, font-embedding,
-evidence-binding, cross-brand, and high-resolution visual checks. The editable
-source package and executive summaries remain in the controlled delivery archive
-and are not part of the customer-facing download set. See [REPORT_QA.md](REPORT_QA.md).
-
-No synthetic personal signatory, handwritten signature image, seal, or invented
-institutional report number is included.
-
-See [SECURITY.md](SECURITY.md) for responsible disclosure.
+These reports are the complete customer-facing assessment documents. Editable
+sources, internal QA records, evidence manifests and operational files are not
+part of this public download repository.
