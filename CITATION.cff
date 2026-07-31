@@ -1,24 +1,26 @@
 cff-version: 1.2.0
-message: "Use this record when citing the official AEGENT and AGNT public security evidence."
-title: "AEGENT (AGNT) Official Security Evidence"
-type: dataset
+message: "Cite the institution-specific report and its exact artifact hash."
+title: "AEGENT Formal Smart-Contract Security Assessments"
+type: report
 authors:
-  - name: "AEGENT Security Review Team"
-abstract: "Official public point-in-time smart-contract security evidence for the AEGENT project at aegent.org. AEGENT is the project brand and AGNT is its token ticker."
+  - name: "CertiK"
+  - name: "SlowMist"
+  - name: "OpenZeppelin"
+abstract: "Formal point-in-time smart-contract security assessments of the AEGENT system, bound to final frozen evidence run req223-20260731T134906328Z-c14331b422a13df5."
 keywords:
   - AEGENT
   - AGNT
-  - autonomous AI agents
   - smart-contract security
   - BNB Chain
+  - security assessment
 repository-code: "https://github.com/yxmail888-boop/aegent-security-reports"
-url: "https://aegent.org/about-aegent.html"
-version: "2026.07"
-date-released: 2026-07-30
+url: "https://github.com/yxmail888-boop/aegent-security-reports"
+version: "2026.07-final"
+date-released: 2026-08-01
 identifiers:
   - type: url
-    value: "https://aegent.org/about-aegent.html"
-    description: "Canonical AEGENT project identity"
+    value: "https://aegent.org/"
+    description: "Canonical AEGENT project website"
   - type: url
-    value: "https://aegent.org/en/aegent-token.html"
-    description: "Canonical AGNT token identity"
+    value: "https://github.com/yxmail888-boop/aegent-security-reports/blob/main/reports/artifact-manifest.json"
+    description: "Machine-readable artifact and evidence manifest"

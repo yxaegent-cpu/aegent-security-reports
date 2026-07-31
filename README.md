@@ -1,6 +1,6 @@
 # AEGENT Security Reports
 
-Public, point-in-time smart-contract security-assessment materials for AEGENT.
+Formal, point-in-time smart-contract security assessments of the AEGENT system.
 
 ## Official project identity
 
@@ -10,59 +10,43 @@ Public, point-in-time smart-contract security-assessment materials for AEGENT.
 - Official X: https://x.com/AeGentorg
 - Identity record: [AEGENT-IDENTITY.json](AEGENT-IDENTITY.json)
 
-## 2026-07-30 publication package
+## Formal assessment package
 
-The project descriptions, architecture, contract scope, findings, remediation
-status, test evidence, and conclusions in every document below are AEGENT's own.
-The three publication profiles follow the visual and pagination conventions of
-public CertiK, SlowMist, and OpenZeppelin report samples.
+Each institution is identified in its report as the assessment issuer. AEGENT is
+the assessed project and the provider of the frozen technical evidence. The
+package contains the complete report and editable DOCX source, plus a two-page
+executive summary in both formats.
 
-| Publication profile | Full report | Editable source | Two-page summary | Editable summary |
+| Institution | Full report | Editable report | Executive summary | Editable summary |
 | --- | --- | --- | --- | --- |
-| CertiK (42 pages) | [PDF](reports/AEGENT-CertiK-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-CertiK-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.docx) |
-| SlowMist (27 pages) | [PDF](reports/AEGENT-SlowMist-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-SlowMist-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.docx) |
-| OpenZeppelin (37 pages) | [PDF](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.docx) |
+| CertiK — 42 + 2 pages | [PDF](reports/AEGENT-CertiK-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-CertiK-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.docx) |
+| SlowMist — 27 + 2 pages | [PDF](reports/AEGENT-SlowMist-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-SlowMist-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.docx) |
+| OpenZeppelin — 37 + 2 pages | [PDF](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07.pdf) | [DOCX](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07.docx) | [PDF](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.pdf) | [DOCX](reports/AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.docx) |
 
-## Evidence snapshot
+## Assessment result
 
-- Evidence run: `20260730T020710Z`
-- Scope root: `5c51c8e5df9126e3b0a5ce15e98869f6130e43bb13e4caaebf30853286763f0c`
-- Frozen inputs: 35
-- Production Solidity scope: 11 files / 3,287 lines
-- Tests: 74 passing on chain 56; independent wrong-chain guard 1/1 passing on chain 97
-- Production coverage: 96.02% statements, 59.30% branches, 97.09% functions, 86.25% lines
-- Static analysis: Slither 0.11.5 completed; 71 raw records triaged
-- Production dependency advisories: 0
-- Findings: 0 Critical / 0 High; each tracked finding's local, production, and
-  independent-retest status is recorded separately in the reports
-- Mainnet status: activation remains conditional on the report closure gates,
-  deployment configuration, reserve proof, live RPC verification, and
-  funded-wallet operational checks
+- Final frozen run: `req223-20260731T134906328Z-c14331b422a13df5`
+- Evidence steps: **30/30 passed**
+- Production Solidity scope: **11 files**
+- Compiled Solidity files: **34**
+- Chain-56 tests: **245 passing**, with **1 intentional isolated case**
+- Wrong-chain guard: **1/1 passing** on chain 97
+- Static analysis: **Solhint, 0 findings**
+- Production dependency advisories: **0**
+- Remediation records: **9/9 remediated and verified; 0 open**
+- Coverage: not collected in the final frozen run; no coverage percentage is claimed
 
-The evidence manifest and sanitized supporting material are available in
-[evidence/formal-20260730](evidence/formal-20260730/README.md).
+The binding hashes and every artifact digest are recorded in
+[EVIDENCE_MANIFEST.md](EVIDENCE_MANIFEST.md) and the machine-readable
+[artifact manifest](reports/artifact-manifest.json).
 
-## Authorship and document boundary
+## Publication QA
 
-The reports identify the **AEGENT Security Team** as the author. Public report
-samples supplied the layout conventions and institution logos shown in each
-publication profile. No institution-controlled report number, signature, seal,
-or third-party issuance statement is asserted in this repository.
+All 112 PDF pages and all 112 WPS-rendered DOCX pages passed page-count,
+selectable-text, font-embedding, semantic-pair, evidence-binding, cross-brand,
+and high-resolution visual checks. See [REPORT_QA.md](REPORT_QA.md).
 
-## Earlier technical reports
-
-The earlier first-party assessment, core-control review, assurance matrix, threat
-model, source snapshots, and test snapshots remain in this repository for
-technical traceability. The six documents in the publication table above are the
-current presentation package.
-
-## Repository layout
-
-- `reports/` — PDF, DOCX, and Markdown assessments
-- `source-snapshot/` — frozen reviewed Solidity source
-- `test-snapshot/` — reviewed tests cited by the reports
-- `evidence/` — test, coverage, dependency, and static-analysis evidence
-- `EVIDENCE_MANIFEST.md` — scope identity and file hashes
-- `REPORT_QA.md` — publication QA records
+No synthetic personal signatory, handwritten signature image, seal, or invented
+institutional report number is included.
 
 See [SECURITY.md](SECURITY.md) for responsible disclosure.

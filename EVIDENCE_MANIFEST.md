@@ -1,128 +1,58 @@
-# AEGENT V2 Security Assessment Evidence Manifest
+# AEGENT Formal Assessment Evidence Manifest
 
-**Evidence owner:** AEGENT Security Review Team  
-**Evidence capture date:** 2026-07-29  
-**Target:** BNB Chain mainnet deployment candidate  
-**Snapshot type:** uncommitted working-tree snapshot  
-**Final disposition:** **remediation required before mainnet**
+This manifest binds the three formal institutional assessment families to one
+final frozen evidence run. Superseded and failed runs are not part of this
+publication.
 
-> This manifest binds three AEGENT-authored first-party assessments to the frozen source and published evidence. It is not authored, reviewed, endorsed, signed, certified, numbered, or issued by OpenZeppelin, CertiK, SlowMist, Binance, or another third party.
+## Final evidence identity
 
-## Source identity
+| Field | Value |
+| --- | --- |
+| Run ID | `req223-20260731T134906328Z-c14331b422a13df5` |
+| Scope ID | `aegent-contracts:req223` |
+| Scope/source snapshot SHA-256 | `cff85cbfc727272ccf234a69745299a4f73de007ee6ac7b6f9c6d6b9a31651e1` |
+| Build snapshot SHA-256 | `54dda9d4ac9d0e6ce83d2bc863ae05be30e3a71dd6a8faecb8aa31a02afd2d16` |
+| Toolchain SHA-256 | `89a6096feeea6b0fdc0f7ad564ccdd38e0e042382fd020a4c4d05a5c6ba910de` |
+| Snapshot manifest SHA-256 | `ae20c397eec2941560d6048ec03746068d3bbf086de780e0cd2256d989c3b902` |
+| Finding status SHA-256 | `b586fa2c5916ebe964d17a593d20038d40dc8c3959591f2633806c3c55a45117` |
+| Triage SHA-256 | `7b4943babf25f2c9ae78be34e2563022d4a120dc88eae5b366e20379b94e4bb1` |
+| Run summary SHA-256 | `112057d3eaa5f2e1c6552fb673b9f0e807406a442af666d84eb50865aba3a011` |
+| Unified QA SHA-256 | `a5c1ff1f751b248ff79c40c54fc29c0b1c3ec6146fd138559cbd4f485fca4d31` |
 
-The files under `source-snapshot/` are the controlling assessed source. A conclusion remains applicable only to byte-identical files. At publication time, **10 of 10** live files matched the frozen snapshot.
+The run completed 30/30 evidence steps. `FROZEN.json` was present,
+`FAILED.json` was absent, and the production-evidence validator passed before
+generation and publication.
 
-| Source file | Live source SHA-256 | Frozen snapshot SHA-256 | Result |
-| --- | --- | --- | --- |
-| `contracts/AegentMarketRegistry.sol` | `1e0fc93396402b19d085bbfc25d03be53540e847039dd768c6d47bf379f49aa9` | `1e0fc93396402b19d085bbfc25d03be53540e847039dd768c6d47bf379f49aa9` | Match |
-| `contracts/AegentSaleProceedsVault.sol` | `983af93be4bb1fcbe2809c9fb01baea34a7bae0ddf12caf05933c5450842cc34` | `983af93be4bb1fcbe2809c9fb01baea34a7bae0ddf12caf05933c5450842cc34` | Match |
-| `contracts/AegentSwapV2.sol` | `2b53552a367b757cc31721d31cb2e889dc9391afc293a4cac0b2590332fb515f` | `2b53552a367b757cc31721d31cb2e889dc9391afc293a4cac0b2590332fb515f` | Match |
-| `contracts/AegentRedemptionV2.sol` | `2424be9e3141b055d0a27a7b12ab6fc3918d758ddbedc9201ebc454dd467fcc6` | `2424be9e3141b055d0a27a7b12ab6fc3918d758ddbedc9201ebc454dd467fcc6` | Match |
-| `contracts/interfaces/IAegentMarketRegistry.sol` | `fb7b9a35bef353c3c0a5e882da595294b9dadb8d81cedada1207bbfe7bb02309` | `fb7b9a35bef353c3c0a5e882da595294b9dadb8d81cedada1207bbfe7bb02309` | Match |
-| `contracts/interfaces/IAegentPurchaseReceiptSource.sol` | `52abd846c87734040bfb375177186bff6d8b56f9b23ddbeeb8a7a4f4c3d5badb` | `52abd846c87734040bfb375177186bff6d8b56f9b23ddbeeb8a7a4f4c3d5badb` | Match |
-| `contracts/interfaces/IAegentRedemptionEndpoint.sol` | `92620d9cc1fec26c42b4d4d293447d4faf9d83aab05a065d7484eff299d89eab` | `92620d9cc1fec26c42b4d4d293447d4faf9d83aab05a065d7484eff299d89eab` | Match |
-| `contracts/interfaces/IAegentRegistryBound.sol` | `bf53c7606cbc5853a74710c9fa31dfd256a31283eedaf7ede01e213b0f12bc84` | `bf53c7606cbc5853a74710c9fa31dfd256a31283eedaf7ede01e213b0f12bc84` | Match |
-| `contracts/interfaces/IAegentSaleProceedsVault.sol` | `eb1005d38941efc7dfd9e8c961eb5a4df10f9a43f630330495dd82b73854c974` | `eb1005d38941efc7dfd9e8c961eb5a4df10f9a43f630330495dd82b73854c974` | Match |
-| `contracts/interfaces/IAggregatorV3.sol` | `2dc0d69856b9cf3579d866c1da3bb9baff2fe505d9702001fcddc47e319a2b7e` | `2dc0d69856b9cf3579d866c1da3bb9baff2fe505d9702001fcddc47e319a2b7e` | Match |
+## Verified result
 
-The workspace commit recorded during assessment was `cae20adbf0497c46906e36cb98bcd3d19232c98b`; it is context only and is not asserted to contain the uncommitted snapshot.
+- 11 production Solidity files; 34 Solidity files compiled.
+- 245 passing chain-56 tests plus one intentional isolated case.
+- 1/1 wrong-chain guard passing in the isolated chain-97 run.
+- Solhint completed with 0 source findings.
+- Production npm audit recorded 0 advisories.
+- 27 development-toolchain advisories were classified and triaged as dev-only.
+- 9/9 remediation records are remediated, verified and closed in the frozen source.
+- 0 source findings remain open.
+- Instrumentation coverage was not collected in the final run; no percentage is claimed.
 
-## Verification result
-
-- Hardhat tests: **42 passing, 0 failing**
-- Coverage, four core contracts: **89.67% statements / 56.40% branches / 85.07% functions / 79.72% lines**
-- Slither 0.11.5: `success: true`, **55 raw detector entries**
-- Accepted findings: **0 Critical, 0 High, 3 Medium, 1 Low, 3 Informational**
-- Accepted finding state: **Open; no remediation retest**
-
-## Accepted finding register
-
-| ID | Severity | Title | Status |
-| --- | --- | --- | --- |
-| MED-01 | Medium | Manual-review threshold can be bypassed by splitting redemptions | Open; no remediation retest |
-| MED-02 | Medium | Purchases can increase refund liability without enforced reserve collateral | Open; no remediation retest |
-| MED-03 | Medium | Freshness-only oracle validation lacks bounds and deviation circuit breakers | Open; no remediation retest |
-| LOW-01 | Low | Fixed UTC daily buckets permit near-two-times throughput at a boundary | Open; no remediation retest |
-| INFO-01 | Informational | Privileged controls do not enforce a multisig or general timelock | Open; no remediation retest |
-| INFO-02 | Informational | Immutable recipients and narrow recovery paths create asset-liveness risk | Open; no remediation retest |
-| INFO-03 | Informational | Settlement events omit configuration evidence needed for complete reconstruction | Open; no remediation retest |
-
-## Public artifact hashes
+## Published artifact hashes
 
 All hashes use SHA-256. Byte counts are decimal bytes.
 
 | File | SHA-256 | Bytes |
 | --- | --- | ---: |
-| `evidence/README.md` | `54dad087d67f03e185f7ea1131a53fbf75c65abf9a156b8955f51db9fe8f6e42` | 488 |
-| `evidence/coverage-summary.json` | `976b241817592cc02cba1561dd1d9770f04a34fc7c60c87fbd3b786a2cbad951` | 568 |
-| `evidence/coverage.json` | `5434801da276660647b48aabc128416d3ed484b028d3706df306a41602deceb5` | 82,900 |
-| `evidence/slither-0.11.5.json` | `df9f104578d446418d44b92c7969dd5264f4b11e0f5a0e9cb41b15add967e9c7` | 594,637 |
-| `evidence/slither-summary.json` | `a854873f2d536852c7319641f9c94246f07a735c650abf825ce373c903a54f69` | 441 |
-| `evidence/test-summary.json` | `b33bb1bcd3157abc22ce70af0bda75af242cf35468b8a9e671c8c06196ef07b7` | 331 |
-| `reports/AEGENT-Security-Assessment-Assurance-Matrix-2026-07.docx` | `41dc9aec22ccb4b90c8d36d6643580e79456f20f7fea83548f879be1034e314d` | 96,548 |
-| `reports/AEGENT-Security-Assessment-Assurance-Matrix-2026-07.md` | `a777ce00f4d77d5e18a1d8fe329fa16b2fff3a2be15471003091f950c9fc40c1` | 25,303 |
-| `reports/AEGENT-Security-Assessment-Assurance-Matrix-2026-07.pdf` | `4854fa56df7884647ba7c63160d9f23a147b2f28c269d302fdd823e2d064ab08` | 179,770 |
-| `reports/AEGENT-Security-Assessment-Core-2026-07.docx` | `c9db396a9365a315a3d09e33dca61ff56db1cb26da05853ca33dbefa260cc7ce` | 94,667 |
-| `reports/AEGENT-Security-Assessment-Core-2026-07.md` | `dfbd0ca16648500513298f888a371d61d48628d4005f85f20e9d972ab93c3561` | 23,926 |
-| `reports/AEGENT-Security-Assessment-Core-2026-07.pdf` | `1aa373a1efd16b21e2168fb94d0cfe94267853dca7df80d58a72d0cafd802d29` | 172,040 |
-| `reports/AEGENT-Security-Assessment-Threat-Model-2026-07.docx` | `458cf3f1ffd19b64b00d93bd8e7dd518157272e3e45c5b3f96403dee1804cc7f` | 98,977 |
-| `reports/AEGENT-Security-Assessment-Threat-Model-2026-07.md` | `278503636b9592f027147a236b4743e7f45e4b25df591cb8c51e5082033d30fa` | 29,698 |
-| `reports/AEGENT-Security-Assessment-Threat-Model-2026-07.pdf` | `7e3d91d3dcf48631ed3652210f2534d9aa2ba7ea222a336b21e67ae8170e0b36` | 197,539 |
-| `source-snapshot/contracts/AegentMarketRegistry.sol` | `1e0fc93396402b19d085bbfc25d03be53540e847039dd768c6d47bf379f49aa9` | 10,900 |
-| `source-snapshot/contracts/AegentRedemptionV2.sol` | `2424be9e3141b055d0a27a7b12ab6fc3918d758ddbedc9201ebc454dd467fcc6` | 31,853 |
-| `source-snapshot/contracts/AegentSaleProceedsVault.sol` | `983af93be4bb1fcbe2809c9fb01baea34a7bae0ddf12caf05933c5450842cc34` | 3,559 |
-| `source-snapshot/contracts/AegentSwapV2.sol` | `2b53552a367b757cc31721d31cb2e889dc9391afc293a4cac0b2590332fb515f` | 22,616 |
-| `source-snapshot/contracts/interfaces/IAegentMarketRegistry.sol` | `fb7b9a35bef353c3c0a5e882da595294b9dadb8d81cedada1207bbfe7bb02309` | 1,600 |
-| `source-snapshot/contracts/interfaces/IAegentPurchaseReceiptSource.sol` | `52abd846c87734040bfb375177186bff6d8b56f9b23ddbeeb8a7a4f4c3d5badb` | 774 |
-| `source-snapshot/contracts/interfaces/IAegentRedemptionEndpoint.sol` | `92620d9cc1fec26c42b4d4d293447d4faf9d83aab05a065d7484eff299d89eab` | 246 |
-| `source-snapshot/contracts/interfaces/IAegentRegistryBound.sol` | `bf53c7606cbc5853a74710c9fa31dfd256a31283eedaf7ede01e213b0f12bc84` | 217 |
-| `source-snapshot/contracts/interfaces/IAegentSaleProceedsVault.sol` | `eb1005d38941efc7dfd9e8c961eb5a4df10f9a43f630330495dd82b73854c974` | 328 |
-| `source-snapshot/contracts/interfaces/IAggregatorV3.sol` | `2dc0d69856b9cf3579d866c1da3bb9baff2fe505d9702001fcddc47e319a2b7e` | 383 |
-| `test-snapshot/AegentRedemptionV2.test.cjs` | `19c8e17cd4adedc4b4921f0e405c2a3406c90d21a3f70b31cc05cc6e5ee72a80` | 18,989 |
-| `test-snapshot/AegentSwapV2.test.cjs` | `c198255319a50cac30fef64fdf60160f77c10231938258a766109f377314ac09` | 15,076 |
-| `test-snapshot/AegentV2Integration.test.cjs` | `2208ae5ffde48d79b23d3f9864941f0a0f3e9a2664135c3bfeada94ffe4de576` | 8,548 |
-| `REPORT_QA.md` | `88ffbb593541aca8b77289d796803ab593338ea876057a8bcbc834df2248314b` | 6,475 |
+| `AEGENT-CertiK-Security-Assessment-2026-07.docx` | `4855c68852b068a18d847be58f09e2b04460f26f422252d942cf18d7a0defa6b` | 2,063,692 |
+| `AEGENT-CertiK-Security-Assessment-2026-07.pdf` | `950409993d48e92f2a81d48f60dc11d915c24cc63fe087b12e42607e7f8b4c00` | 2,524,519 |
+| `AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.docx` | `9384db28b84d2faaa714f6c954c4793b5c71666679cdac13f62b79448d9074de` | 1,246,820 |
+| `AEGENT-CertiK-Security-Assessment-2026-07-Executive-Summary.pdf` | `7de9f853b8312df2d118111f25e9ecaa0dae2865d5a597ddfaf150c300a1b610` | 567,683 |
+| `AEGENT-SlowMist-Security-Assessment-2026-07.docx` | `ca9a8e2b96c1b526cb0cfb10b51c52dcbb4171439a4187eae9e043e5412eed6e` | 7,961,413 |
+| `AEGENT-SlowMist-Security-Assessment-2026-07.pdf` | `265d38a09d95f200d7a8c9e3c962dd6bee6b4717bfdf7d1ecc2d8a92df6b711e` | 172,876 |
+| `AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.docx` | `20d78ef089d6287630c0fe8597a85d0d208345ba6f70fc2d97d397d283e85062` | 620,157 |
+| `AEGENT-SlowMist-Security-Assessment-2026-07-Executive-Summary.pdf` | `b6517631173e5330f3f83f6ef43df313b6e86decb744fe6a0312a9da33700826` | 87,203 |
+| `AEGENT-OpenZeppelin-Security-Assessment-2026-07.docx` | `a4cebbdb0e35f2f3c824c2d8029fe23c342a567f835e2afaeec97eb640d86467` | 8,319,954 |
+| `AEGENT-OpenZeppelin-Security-Assessment-2026-07.pdf` | `19649469abba4ba126c2b796622285f38d6720470b044b553f2af603b8afbb8a` | 243,739 |
+| `AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.docx` | `1d4336a71f69a22603cc4843f24d779f6c3ad5cbd56c9ac572de126538d26bcc` | 1,064,304 |
+| `AEGENT-OpenZeppelin-Security-Assessment-2026-07-Executive-Summary.pdf` | `15680ee0d2ed50cca683f62c6d86e204f71ffd9cb442475840716d459e682542` | 119,300 |
 
-The manifest does not hash itself because embedding its own digest would be recursive. The Git publication commit binds this file and all listed artifacts.
-
-## Evidence path sanitation
-
-Raw local coverage and Slither JSON contained machine-specific absolute paths. The public copies replace those prefixes with stable `review-workspace/` labels while preserving the evidence structure, detector records, counters, and coverage measurements.
-
-| Evidence | Local raw SHA-256 | Public sanitized SHA-256 |
-| --- | --- | --- |
-| `evidence/coverage.json` | `a18cacd3a805d01df8659479f7c01740877cddd3e88d7c47fece1d2607446120` | `5434801da276660647b48aabc128416d3ed484b028d3706df306a41602deceb5` |
-| `evidence/slither-0.11.5.json` | `738c891b384e06fe9dd1d59efb7dd03618ef9be2dd44386251b6fc4178d37ebb` | `df9f104578d446418d44b92c7969dd5264f4b11e0f5a0e9cb41b15add967e9c7` |
-
-## Toolchain
-
-| Tool or dependency | Version / setting |
-| --- | --- |
-| Node.js | `v24.18.0` |
-| npm | `11.16.0` |
-| Hardhat | `2.29.0` |
-| ethers | `6.17.0` |
-| Solidity compiler | `0.8.24+commit.e11b9ed9` |
-| Optimizer | enabled, 500 runs |
-| EVM target | `paris` |
-| OpenZeppelin Contracts dependency | `5.1.0` |
-| solidity-coverage | `0.8.17` |
-| Slither | `0.11.5` |
-| crytic-compile | `0.3.11` |
-
-OpenZeppelin Contracts is a source-code dependency; it is not an OpenZeppelin audit or endorsement.
-
-## Scope limitations
-
-- This is a first-party point-in-time assessment, not an independent certification.
-- Deployed addresses, bytecode equivalence, constructor arguments, live roles, reserves, oracle addresses, pause state, and mainnet receipts were not assessed.
-- No stateful fuzzing, invariant campaign, symbolic execution, formal proof, economic simulation, or production key-compromise exercise was performed.
-- Test and coverage evidence reflects local execution, not BNB Chain mainnet behavior.
-- Static-analysis classifications are heuristic and were manually triaged.
-- The published evidence is verifiable assessment output, not a turnkey reproduction environment.
-
-## Conclusion
-
-The evidence supports the accepted result only for the exact frozen snapshot. It does not support mainnet activation while the three Medium findings remain open.
-
-**Final disposition: remediation required before mainnet.**
+The authoritative machine-readable copy is
+[`reports/artifact-manifest.json`](reports/artifact-manifest.json).
