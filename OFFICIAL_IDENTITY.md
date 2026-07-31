@@ -8,7 +8,7 @@ This repository publishes the formal smart-contract security assessments of the
 | **AEGENT** | Assessed project | https://aegent.org/ |
 | **AGNT** | AEGENT token ticker | https://aegent.org/en/aegent-token.html |
 | **@AeGentorg** | Official project account on X | https://x.com/AeGentorg |
-| **Security reports** | Formal public report repository | https://github.com/yxmail888-boop/aegent-security-reports |
+| **Security reports** | Formal public report repository | https://github.com/yxaegent-cpu/aegent-security-reports |
 
 The published BNB Chain contract reference is:
 

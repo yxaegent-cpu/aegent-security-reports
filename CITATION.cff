@@ -13,8 +13,8 @@ keywords:
   - smart-contract security
   - BNB Chain
   - security assessment
-repository-code: "https://github.com/yxmail888-boop/aegent-security-reports"
-url: "https://github.com/yxmail888-boop/aegent-security-reports"
+repository-code: "https://github.com/yxaegent-cpu/aegent-security-reports"
+url: "https://github.com/yxaegent-cpu/aegent-security-reports"
 version: "2026.07-final"
 date-released: 2026-08-01
 identifiers:
